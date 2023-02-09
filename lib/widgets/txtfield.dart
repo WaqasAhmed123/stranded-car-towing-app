@@ -21,7 +21,7 @@ class _TxtfieldState extends State<Txtfield> {
       child: TextFormField(
         autofocus: false,
         decoration: InputDecoration(
-          contentPadding: EdgeInsets.all( 15),
+          contentPadding: EdgeInsets.all(15),
           prefixIcon: widget.icon,
           hintText: widget.hinttxt,
         ),

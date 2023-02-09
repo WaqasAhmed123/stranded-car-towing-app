@@ -11,7 +11,7 @@ class Genwidgetz extends StatelessWidget {
       children: [
         Text(
           txt,
-          style: Theme.of(context).textTheme.labelSmall,
+          style: Theme.of(context).textTheme.labelMedium,
         ),
         TextButton(
             onPressed: () {},
