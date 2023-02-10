@@ -8,7 +8,9 @@ class Requests extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const card = [1, 2, 3, 4];
     return Scaffold(
+        backgroundColor: Color(0xfffefefe),
         appBar: AppBar(
             backgroundColor: Color(0xffffffff),
             toolbarHeight: 90.0,
@@ -22,13 +24,13 @@ class Requests extends StatelessWidget {
                         const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
                     child: Text(
                       "You have 10 new requests",
-                      style: Theme.of(context).textTheme.labelLarge,
+                      style: Theme.of(context).textTheme.titleMedium,
                     ),
                   ),
                 )),
             title: Text(
               "Online",
-              style: Theme.of(context).textTheme.labelLarge,
+              style: Theme.of(context).textTheme.titleSmall,
             ),
             centerTitle: true,
             actions: [
@@ -38,12 +40,18 @@ class Requests extends StatelessWidget {
             ]),
         drawer: Drawer(),
         body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
-          child: Column(
-            children: [
-              requestCard(context),
-            ],
+          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+          child: ListView.builder(
+            itemCount: card.length,
+            itemBuilder: (context, index) {
+              return requestCard(context);
+            },
           ),
+          // child: Column(
+          //   children: [
+          //     requestCard(context),
+          //   ],
+          // ),
         ));
   }
 }

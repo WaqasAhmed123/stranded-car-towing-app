@@ -38,20 +38,22 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
           scaffoldBackgroundColor: Color(0xFFFFFFFF),
-          //alot of correction needed esp in text
-          // primarySwatch: Colors.yellow,
           primarySwatch: MaterialColor(0xFFFDAB1A, color),
           primaryColor: const Color(0xFFFDAB1A),
           textTheme: TextTheme(
-            headlineLarge: textTheme["headlineLarge"],
-            displayLarge: textTheme["displayLarge"],
-            displayMedium: textTheme["displayMedium"],
-            displaySmall: textTheme["displaySmall"],
-            labelLarge: textTheme['labelLarge'],
+            headlineMedium: textTheme["headlineMedium"],
+            headlineSmall: textTheme["headlineSmall"],
+            titleMedium: textTheme["titleMedium"],
+            titleSmall: textTheme["titleSmall"],
+            displayLarge: textTheme['displayLarge'],
+            displayMedium: textTheme['displayMedium'],
+            displaySmall: textTheme['displaySmall'],
+            bodyMedium: textTheme["bodyMedium"],
+            bodySmall: textTheme["bodySmall"],
             labelMedium: textTheme["labelMedium"],
             labelSmall: textTheme["labelSmall"],
           )),
-      home: Requests(),
+      home: Signup(),
     );
   }
 }

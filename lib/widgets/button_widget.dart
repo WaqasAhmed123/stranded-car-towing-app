@@ -14,14 +14,15 @@ ButtonWidget(title, context, onTap) {
           boxShadow: const [
             BoxShadow(
               color: Color.fromARGB(16, 0, 0, 0),
-              blurRadius: 3.5,
-              offset: Offset(3, 3),
+              blurRadius: 4,
+              spreadRadius: 2,
+              offset: Offset(0, 3),
             ),
           ],
         ),
         child: Text(
-          title,
-          style: Theme.of(context).textTheme.displaySmall,
+          "title",
+          style: Theme.of(context).textTheme.bodyMedium,
           textAlign: TextAlign.center,
         )),
   ));

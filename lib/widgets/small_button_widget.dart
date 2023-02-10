@@ -6,11 +6,11 @@ SmallButtonWidget(title, context, onTap) {
   return (InkWell(
     onTap: onTap,
     child: Container(
-        // width: MediaQuery.of(context).size.width * 0.6,
-        padding: const EdgeInsets.symmetric(vertical: 10),
+        width: 60,
+        padding: const EdgeInsets.all(5),
         decoration: BoxDecoration(
           color: Theme.of(context).primaryColor,
-          borderRadius: const BorderRadius.all(Radius.circular(13)),
+          borderRadius: const BorderRadius.all(Radius.circular(5)),
           boxShadow: const [
             BoxShadow(
               color: Color.fromARGB(16, 0, 0, 0),
@@ -22,8 +22,11 @@ SmallButtonWidget(title, context, onTap) {
         child: Text(
           title,
           textAlign: TextAlign.center,
-          style: TextStyle(
-              fontSize: 5, fontFamily: "Poppins", color: Color(0xff0e0e0e)),
+          style: const TextStyle(
+            fontSize: 8,
+            fontFamily: "Poppins",
+            color: Color(0xff0e0e0e),
+          ),
         )),
   ));
 }

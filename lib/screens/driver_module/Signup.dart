@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:stranded/widgets/button_widget.dart';
 import 'package:stranded/widgets/generalwidgets.dart';
 import 'package:stranded/widgets/login_signupbut.dart';
 import 'package:stranded/widgets/txtfield.dart';
-import 'package:stranded/widgets/txtfield copy.dart';
+import 'package:stranded/widgets/input_feild.dart';
 
 class Signup extends StatefulWidget {
   const Signup({Key? key}) : super(key: key);
@@ -75,10 +76,10 @@ class _SignupState extends State<Signup> {
                           child: ListView.builder(
                               itemCount: txtlist.length,
                               itemBuilder: (context, index) {
-                                return Txtfield2(txtlist[index], null);
+                                return InputFeild(txtlist[index], null);
                               }),
                         ),
-                        Center(child: Log_SignBut("SignIn")),
+                        Center(child: ButtonWidget("SignIn", context, () {})),
                         inst.but("Already have account", "SignIn", context)
                       ],
                     ),

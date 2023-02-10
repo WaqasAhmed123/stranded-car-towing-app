@@ -35,7 +35,7 @@ class _ImageWithTextState extends State<ImageWithText> {
             child: Text(
               widget.props["title"],
               textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.headlineLarge,
+              style: Theme.of(context).textTheme.displayLarge,
             ),
           ),
           Expanded(
@@ -43,7 +43,7 @@ class _ImageWithTextState extends State<ImageWithText> {
               padding: const EdgeInsets.symmetric(horizontal: 50.0),
               child: Text(
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                style: Theme.of(context).textTheme.labelLarge,
+                style: Theme.of(context).textTheme.displaySmall,
                 textAlign: TextAlign.center,
               ),
             ),
@@ -62,7 +62,7 @@ class _ImageWithTextState extends State<ImageWithText> {
                     );
                   },
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 )
               ])),
